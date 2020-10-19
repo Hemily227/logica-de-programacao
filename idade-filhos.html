@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+
+<script>
+
+      function pulaLinha() {
+          document.write("<br>");
+      }
+
+      function mostra(frase) {
+          document.write(frase);
+          pulaLinha();
+      }
+
+      var idadeMediaQuandoTemFilhos = 28;
+      var anoAtual = parseInt(prompt("Em que ano estamos?"));
+
+      var quantidadeDeGeracoes = Math.round((anoAtual - 1500) / idadeMediaQuandoTemFilhos);
+
+      mostra("Considerando que em média, um casal tem filhos quando atinge a idade de 28 anos. Desde o ano de 1500 até agora, ano " + anoAtual + ", houveram aproximadamente " + quantidadeDeGeracoes + " gerações de brasileiros.");
+
+</script>

@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+
+      contador = 2;
+
+      while(contador <= 100){
+          mostra(contador);
+          contador = contador + 2;
+      }
+
+      mostra("<br>" + "Fim");
+
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+      function calcularImc(peso, altura){
+           return Math.round(peso/ (altura * altura));
+          // var imc = peso/ (altura * altura);
+          // return imc;
+      }
+
+      var imcSofia = calcularImc(60, 1.60)
+      var imcAna = calcularImc(70, 1.70)
+      var totalImc = imcSofia + imcAna;
+      //var totalImc = calcularImc(60, 1.60) + calcularImc(70, 1.70);
+
+      mostra("O IMC de Sofia é " + imcSofia);
+      mostra("O IMC de Sofia é " + imcAna);
+      mostra("a soma dos IMCs de é " + totalImc);
+
+</script>

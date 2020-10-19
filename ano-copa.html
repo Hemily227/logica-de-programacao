@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+      var esteAno = parseInt(prompt("Em que ano estamos?"));
+      var anoCopa = 1930;
+      mostra("Teve copa em :");
+
+      while(anoCopa <= esteAno ) {
+        mostra("-" + anoCopa);
+        anoCopa = anoCopa + 4;
+      }
+
+
+</script>

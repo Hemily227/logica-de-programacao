@@ -1,0 +1,52 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+
+      <style media="screen">
+
+        body{
+          background-color: #ffe1c3;
+          margin: 50px;
+          border: 1px black solid;
+          padding: 20px;
+        }
+
+      </style>
+
+    </head>
+
+    <body>
+
+          <h3>Álcool ou Gasolina?</h3>
+
+          <script>
+
+          function pularLinha(){
+              document.write("<br>");
+          }
+
+          function mostra(info){
+              document.write(info);
+              pularLinha();
+          }
+
+          var tanque = 40;
+
+          var caminhoGasolina = 480;
+          var consumoGasolina = caminhoGasolina/tanque;
+
+          var caminhoAlcool = 300;
+          var consumoAlcool = caminhoAlcool/tanque;
+
+          mostra("Com a gasolina e o tanque cheio, o carro percorreu " + caminhoGasolina + ".");
+          mostra(" O consumo de gasolina foi de: " + consumoGasolina + " km/L");
+          pularLinha();
+          mostra("Com o álcool e tanque cheio, o carro percorreu " + caminhoAlcool + ".");
+          mostra(" O consumo de álcool foi de: " + consumoAlcool + " km/L");
+          pularLinha();
+          mostra("<i>Então, qual lhe parece melhor?<i>");
+
+
+        </script>
+    </body>
+<html>

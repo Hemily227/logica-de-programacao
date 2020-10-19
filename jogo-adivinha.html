@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+      //mostra("VAMOS JOGAR ?");
+      //pularLinha();
+      //mostra("As regras são simples:");
+      //mostra("-Pensarei um número de 1 a 100");
+      //mostra("-E você irá tentar acertar qual número acertamos");
+      //mostra("-Se acertar você ganha");
+      //mostra("-Mas se errar, eu ganho");
+
+
+      var numeroPensado = Math.round( Math.random() * 100);
+      console.log(numeroPensado)
+      var chute = parseInt( prompt("faça seu chute !") );
+
+      if(chute == numeroPensado){
+        mostra("Você acertou! Parabéns !");
+      } else {
+        mostra("Você errou! O número pensado foi " + numeroPensado );
+      }
+
+</script>

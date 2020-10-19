@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+      var idade = parseInt(prompt("Digite sua idade."));
+
+      while( isNaN(idade) ) {
+          idade = parseInt(prompt("Idade não identificada, digite sua idade novamente."));
+      }
+
+      alert(idade);
+
+
+</script>

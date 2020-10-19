@@ -1,0 +1,76 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+
+      <style media="screen">
+
+        body{
+          background-color: #d2dbf9;
+          margin: 50px;
+          border: 2px #003273 solid;
+          padding: 20px;
+        }
+        h2{
+          font-family: cursive;
+          color: #091e3a;
+        }
+
+      </style>
+
+    </head>
+
+
+    <body>
+
+    </body>
+
+          <h2>Acabei de calcular a diferença!</h2>
+
+
+
+          
+          <script>
+
+              function pularLinha(){
+                  document.write("<br>");
+              }
+
+              function mostra(info){
+                  document.write(info);
+                  pularLinha();
+              }
+
+              alert("Vamos descobrir a difereça de idades!");
+              var nomePessoa1 = prompt("Qual é seu nome?");
+              var idadePessoa1 =  parseInt(prompt( nomePessoa1 + ", qual é a sua idade?"));
+              var nomePessoa2 = prompt( nomePessoa1 + ", qual é o nome da pessoa que iremos calcular a difereça de idade?");
+              var idadePessoa2 = parseInt(prompt( nomePessoa1 + ", qual a idade de " + nomePessoa2 + "?"));
+              alert("Okay! Agora irei calcular a diferença.");
+
+              var difereça = 0;
+
+
+
+              if (idadePessoa1 == idadePessoa2){
+                  var diferenca = idadePessoa1 - idadePessoa2;
+                  mostra("Não há diferença de idade entre " + nomePessoa1 + " e " + nomePessoa2);
+                  mostra(nomePessoa1 + " tem a mesma idade que " + nomePessoa2 + "   :)");
+
+              }
+              if (idadePessoa1 > idadePessoa2){
+                  var diferenca = idadePessoa1 - idadePessoa2;
+                  mostra("A diferença de idade entre " + nomePessoa1 + " e " + nomePessoa2 + " é de ...");
+                  document.write(diferenca + " anos. ");
+                  mostra( nomePessoa1 + " é mais velha(o) do que " + nomePessoa2+ "   :)");
+              }
+
+              if (idadePessoa1 < idadePessoa2){
+                  var diferenca = idadePessoa2 - idadePessoa1;
+                  mostra("A diferença de idade entre " + nomePessoa1 + " e " + nomePessoa2 + " é de ...");
+                  document.write(diferenca + " anos. ");
+                  mostra( nomePessoa1 + " é mais nova(o) do que " + nomePessoa2 + "   :)");
+
+              }
+
+          </script>
+</html>

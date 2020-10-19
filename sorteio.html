@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function sorteia() {
+
+          return Math.round(Math.random() * numeroLimite);
+      }
+
+      var numeroLimite = parseInt(prompt("Escolha um número limite"))
+      console.log(numeroLimite);
+
+
+      var numeroSorteado = sorteia();
+      console.log(numeroSorteado);
+
+      var chute = parseInt(prompt("faça seu chute! Escolha um número de 0 e " + numeroLimite));
+
+      if(chute == numeroSorteado){
+        document.write("Você acertou! Parabéns!" + "<br>");
+
+      } else {
+          document.write("Você errou!" + "<br>");
+
+          if(chute < numeroSorteado){
+              document.write(" O número que você escolheu é menor do que o número sorteado" + "<br>");
+          }
+          if(chute > numeroSorteado){
+              document.write(" O número que você escolheu é maior do que o número sorteado" + "<br>");
+          }
+      }
+
+
+      document.write(" O número sorteado entre 0 e " + numeroLimite + " foi: " + numeroSorteado );
+
+
+</script>

@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var ano = 2020;
+
+    document.write("As idades do grupo A:"+ "<br><br>");
+    document.write("João tem " + (ano - 1997)+ "<br>");
+    document.write("Carlos tem " + (ano - 1995)+ "<br>");
+    document.write("Paula tem " + (ano - 1993)+ "<br>");
+
+    var mediaA = (23+25+27)/3;
+    document.write("A média de idades do grupo A é "+ mediaA + "<br><br><br>");
+    // se o ano mudar a media de idade do grupo a não mudará
+
+
+    document.write("As idades do grupo B:"+ "<br><br>");
+    var nome = "Clara";
+    var idadeClara = (ano - 1979);
+    var idadeJose = (ano - 1977);
+    var idadeGabriel = (ano - 1974);
+    document.write( nome + " tem " + idadeClara + " anos" + "<br>");
+    document.write("José tem " + idadeJose + " anos" + "<br>");
+    document.write("Gabriel tem " + idadeGabriel+ " anos" + "<br>");
+
+    var mediaB = (idadeClara + idadeJose + idadeGabriel)/3;
+    document.write("A média de idades do grupo B é "+ Math.round(mediaB) + "<br><br><br>");
+
+    var pularLinha = "<br><br>";
+    document.write("Os grupo A e B tem:");
+    document.write(pularLinha);
+    document.write("João");
+    document.write(pularLinha);
+    document.write("Carlos");
+    document.write(pularLinha);
+    document.write("Paula");
+    document.write(pularLinha);
+    document.write("Clara");
+    document.write(pularLinha);
+    document.write("José");
+    document.write(pularLinha);
+    document.write("Gabriel");
+
+</script>

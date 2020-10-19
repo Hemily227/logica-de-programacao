@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+
+      function pularLinha(){
+          document.write("<br>");
+      }
+
+      function mostra(info){
+          document.write(info);
+          pularLinha();
+      }
+
+      alert("Vamos fazer uma tabuada! Multiplicando x Multiplicador");
+      var multiplicador = 0;
+      var multiplicando = parseInt(prompt("Qual é o valor do multiplicando?"));
+      var limite = parseInt(prompt("Qual é o limite do multiplicador ?"));
+
+      while(multiplicador < limite){
+          multiplicador++;
+          mostra(multiplicando + " x " + multiplicador + " = " + (multiplicando * multiplicador));
+      }
+
+
+</script>
